@@ -12,84 +12,23 @@ export default function Contact() {
             </p>
           </div>
 
-          <form action="#" method="POST" className="space-y-6">
+          <form className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-medium text-gray-300 mb-2"
-                >
-                  First name
-                </label>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 backdrop-filter backdrop-blur-xl transition-all"
-                  placeholder="John"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm font-medium text-gray-300 mb-2"
-                >
-                  Last name
-                </label>
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 backdrop-filter backdrop-blur-xl transition-all"
-                  placeholder="Doe"
-                />
-              </div>
+              <input placeholder="John" className="p-3 rounded" />
+              <input placeholder="Doe" className="p-3 rounded" />
             </div>
 
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-300 mb-2"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 backdrop-filter backdrop-blur-xl transition-all"
-                placeholder="john@example.com"
-              />
-            </div>
+            <input placeholder="Email" className="p-3 rounded w-full" />
 
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-300 mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 backdrop-filter backdrop-blur-xl transition-all resize-none"
-                placeholder="Tell us about your project..."
-              ></textarea>
-            </div>
+            <textarea
+              rows={5}
+              className="p-3 rounded w-full"
+              placeholder="Tell us about your project..."
+            />
 
-            <div className="pt-4">
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center h-14 text-base font-semibold rounded-2xl text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-[1.02]"
-              >
-                Let&apos;s Talk
-              </button>
-            </div>
+            <button className="w-full bg-blue-500 p-3 rounded text-white">
+              Let&apos;s Talk
+            </button>
           </form>
         </div>
       </div>
